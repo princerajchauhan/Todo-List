@@ -271,7 +271,7 @@ section{
         display: none;
     }
     .add, .logo{
-        font-size: 5vw;
+        font-size: 6vw;
     }
     #noRecord{
         font-size: 16px;
@@ -297,6 +297,12 @@ section{
     .popup{
         width: 80vw;
         gap: 10px;
+    }
+    .add{
+        font-size: 7vw;
+    }
+    header > p{
+        font-size: 8vw;
     }
 }
 
