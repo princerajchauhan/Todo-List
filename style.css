@@ -1,0 +1,309 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 150px 0 150px;
+}
+
+header > p{
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tasks{
+    color: white;
+    font-weight: bold;
+}
+
+.add{
+    font-size: 2vw;
+    cursor: pointer;
+}
+.logo{
+    font-size: 2vw;
+}
+.add:hover{
+    filter: drop-shadow(0px 0px 1px white);
+}
+
+.fa-sharp{
+    color: aqua;
+}
+
+/* ******************* Section *********************** */
+
+section{
+    margin: 30px 150px 0 150px;
+}
+#noRecord{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#todos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* margin: 30px 150px 0 150px; */
+    justify-content: center;
+}
+.todoCard{
+    font-family: sans-serif;
+    background-color: burlywood;
+    border-radius: 15px;
+    width: 220px;
+    height: 260px;
+    background-color: white;
+    position: relative;
+}
+
+.cardFoot{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+.head{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px auto;
+    cursor: pointer;
+}
+.cardBody{
+    text-align: center;
+    /* overflow-y: scroll; */
+    padding-top: 10px;
+}
+.fa-trash-can{
+    color: red;
+}
+.delBtn, .addBtn{
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.delBtn:hover, .addBtn:hover{
+    filter: drop-shadow(0 0 10px gray);
+}
+.addcircle{
+    color: cornflowerblue;
+}
+
+#tripHead{
+    font-size: 4vw;
+}
+
+/* ******************************** Popup ************************************ */
+.popup{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    gap: 15px;
+    padding: 20px 0;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 8px white);
+    z-index: 5;
+}
+
+.popHead{
+    font-size: 23px;
+    color: orangered;
+}
+#popText{
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#popBtn{
+    display: flex;
+    gap: 20px;
+}
+
+.popBtnAddClose{
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.popBtnAddClose:hover{
+    background-color: blue;
+}
+
+
+.spans{
+    background-color: orchid;
+    color: white;
+    border-radius:  10px;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+/* ***************************************** Responsive *********************************** */
+@media screen and (max-width: 900px){
+    header{
+        margin: 50px 100px 0 100px;
+    }
+    .add, .logo{
+        font-size: 3vw;
+    }
+    section{
+        margin: 30px 100px 0 100px;
+    }
+    .popup{
+        width: 40vw;
+    }
+    #noRecord{
+        font-size: 25px;
+    }
+    #tripHead{
+        font-size: 5vw;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    header{
+        margin: 50px 80px 0 80px;
+    }
+    section{
+        margin: 30px 80px 0 80px;
+    }
+    .popup{
+        width: 45vw;
+    }
+    #noRecord{
+        font-size: 20px;
+    }
+    .add, .logo{
+        font-size: 4vw;
+    }
+    header > p{
+        font-size: 5vw;
+    }
+    #tripHead{
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .popup{
+        width: 50vw;
+    }
+    .popHead{
+        font-size: 4vw;
+    }
+    #popBtn{
+        gap: 15px;
+    }
+    .popBtnAddClose{
+        font-size: 15px;
+    }
+    #tripHead{
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .popup{
+        width: 60vw;
+    }
+    .popHead{
+        font-size: 4vw;
+    }
+    #popBtn{
+        gap: 15px;
+    }
+    .popBtnAddClose{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .popup{
+        width: 70vw;
+    }
+    .popBtnAddClose{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .popHead{
+        font-size: 6vw;
+    }
+    header{
+        margin: 50px 60px 0 60px;
+    }
+    section{
+        margin: 30px 60px 0 60px;
+    }
+    header > p{
+        font-size: 6vw;
+    }
+    .addText{
+        display: none;
+    }
+    .add, .logo{
+        font-size: 5vw;
+    }
+    #noRecord{
+        font-size: 16px;
+    }
+    .head{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    header{
+        margin: 50px 40px 0 40px;
+    }
+    section{
+        margin: 30px 40px 0 40px;
+    }
+    header > p{
+        font-size: 7vw;
+    }
+    .popHead{
+        font-size: 7vw;
+    }
+    .popup{
+        width: 80vw;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
