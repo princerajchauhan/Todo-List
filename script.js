@@ -66,6 +66,8 @@ function createCard() {
             }
             document.getElementsByClassName(`todoCard${i}`)[0].style.display = "none"
             console.log(document.getElementsByClassName(`todoCard${i}`)[0])
+            todos.style.justifyContent = "center"
+
         }
         todoCard.style.display = "block"
         logo.classList.add('logo')
@@ -91,7 +93,9 @@ function logoClick(){
         }
         document.getElementsByClassName(`todoCard${i}`)[0].style.display = "block"
     }
+    // cardHead.style.cursor = "auto"
     document.getElementById('tripHead').innerText = ""
+    todos.style.justifyContent = "space-between"
 }
 
 

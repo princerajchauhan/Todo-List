@@ -58,14 +58,14 @@ section{
     flex-wrap: wrap;
     gap: 50px;
     /* margin: 30px 150px 0 150px; */
-    justify-content: center;
+    justify-content: space-between;
 }
 .todoCard{
     font-family: sans-serif;
     background-color: burlywood;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 220px;
-    height: 260px;
+    height: 290px;
     background-color: white;
     position: relative;
 }
